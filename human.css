@@ -392,6 +392,22 @@ td.tocGalleys {
     #hostedBy {max-width: 65%;}
 }
 
+/*footer with HSN logo start*/
+#commonPageFooterContent{
+display: none;
+}
+
+#hostedBy, #publishedBy {
+display: inline-block;
+max-width: 40%;
+}
+
+#cookiePolicy{
+display: inline-block;
+max-width: 10%;
+}
+/*footer with HSN logo end */
+
 /* FOOTER END */
 
 
