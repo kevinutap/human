@@ -1,5 +1,5 @@
 /**
- * plugins/themes/vanilla/njsr.css
+ * plugins/themes/vanilla/human.css
  *
  * Copyright (c) 2013-2014 Simon Fraser University Library
  * Copyright (c) 2003-2014 John Willinsky
@@ -9,11 +9,14 @@
  *
  */
 
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 body {
 	background-color: white !important;
 	width: 100%;
 	max-width: 75em;
 	margin: 0 auto;
+	color: #2A2E36;
 }
 
 a {
@@ -21,20 +24,20 @@ a {
 }
 
 a:link {
-	color: #125c91 !important;
+	color: #2A2E36 !important;
 }
 
 a:active {
-	color: #125c91 !important;
+	color: #2A2E36 !important;
 }
 
 a:visited {
-	color: #125c91 !important;
+	color: #2A2E36 !important;
 }
 
 a:hover {
-	color: #125c91 !important;
-	background: #e8f2f9 !important;
+	color: #2A2E36 !important;
+	background: #C3DAF3 !important;
 }
 
 a.plain {
@@ -45,8 +48,8 @@ ul.plain li { margin-bottom: 5px; }
 
 ul.steplist { margin-bottom: 25px; }
 
-ul.steplist li { font-weight: bold; font-size: 1em; display: inline-block; border-left: 1px solid black; padding: 8px;}
-ul.steplist li:first-child { border: none !important; padding: 8px 8px 8px 0 !important; }
+ul.steplist li { font-weight: bold; font-size: 1em; display: inline-block; border-left: 1px solid #1D4081; padding: 8px;}
+ul.steplist li:first-child {border: none !important;padding: 8px 8px 8px 0 !important;}
 
 #container {
 	width: 100%;
@@ -104,24 +107,24 @@ ul.steplist li:first-child { border: none !important; padding: 8px 8px 8px 0 !im
 }
 
 #sidebarNavigation input.button, input.button[type=Submit] {
-	color: white;
-	background-color: black;
+	color: #2A2E36;
+	background-color: #C3DAF3;
 }
 
 #sidebarNavigation select.selectMenu, select.selectMenu {
-	color: black;
-	background-color: #ddd;
-	border-color: black !important;
+	color: #2A2E36;
+	background-color: White;
+	/* border-color: #1D4081 !important; */
 }
 
 select.selectMenu, input.textField {
-	color: black;
+	color: #2A2E36;
 }
 
 /* END Site reset */ 
 
 body {
-	font-family: arial, helvetica, sans-serif;
+	font-family: "Work Sans", arial, helvetica, sans-serif;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -145,7 +148,7 @@ a:hover {
 
 input.textField, select.selectMenu, textarea.textArea, input.uploadField {
 	background-color: #eeeeee;
-	color: black;
+	color: #2A2E36;
 }
 
 input.defaultButton {
@@ -154,19 +157,23 @@ input.defaultButton {
 }
 
 input[value=Cancel] {
-	background-color: red;
+	/* background-color: red; */
 }
+
+
+
 
 #header {
 	background-color: white;
-	margin: 0;
-	width: auto;
-	min-height: 5rem;
-	position: relative;
-	box-sizing:  border-box;
-	margin-left: 0.5em;
+	border: none;
+	box-sizing: border-box;
+	background-image: url(https://journals.hioa.no/public/journals/15/homeHeaderTitleImage_en_US.png);
+	background-repeat: no-repeat;
+	/* background-position: 50%; */
+	background-size: 100% auto;
+	/* min-height: 5em; */
+	min-height: 12rem;
 }
-
 #headerTitle {
 	width: auto;
 	height: auto;
@@ -191,7 +198,7 @@ input[value=Cancel] {
 
 span.blockTitle {
 	color: black !important;
-	border-bottom: black 1px solid !important;
+	border-bottom: #1D4081 1px solid !important;
 	margin-bottom: 0.5em;
 	padding: 0.2em 0.5em !important;
 }
@@ -199,7 +206,7 @@ span.blockTitle {
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #DD0000;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #1D4081;
 	padding-bottom: 0;
 	margin-right: 0;
 	box-sizing: border-box;
@@ -225,7 +232,14 @@ span.blockTitle {
 	color: #DD0000;
 }
 
-#main h2 {margin-left: 0.4em;/* background: purple; */}
+#main h2 {
+	margin-left: 0.4em;
+	font-family: "Work Sans", arial, helvetica, sans-serif;
+}
+
+#content h2, #content h3, #content h4{
+		font-family: "Work Sans", arial, helvetica, sans-serif;
+}
 
 
 @media screen and (max-width: 50em) {
@@ -242,12 +256,12 @@ td.tocGalleys {
 #breadcrumb {
 	margin-left: 0.85em;
 	padding-bottom: 5px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #1D4081;
 	/* background: red; */
 }
 
 #content {
-	border-top: 0px dotted #000;
+	border-top: 0px dotted #1D4081;
 	margin: 0;
 	margin-right: 16em;
 	margin-right: 12rem;
@@ -284,10 +298,10 @@ td.tocGalleys {
 
 
 #announcementsHome {
-	border: #777 solid 1px;
+	border: #1D4081 solid 1px;
 	width: auto;
 	padding: 0 15px;
-	background-color: #ddd;
+	background-color: #C3DAF3;
 }
 
 .announcementsMore {
@@ -302,19 +316,25 @@ td.tocGalleys {
 
 #main_footer {
 	width: 100%;
-	border-top: dotted 1px black;
+	border-top: dotted 1px #1D4081;
 	float: left;
 	padding: 10px 0 0 0;
 	margin-top: 1.5em;
 	clear: both;
-	color: #777;
+	color: #2A2E36;
 }
 
 #journalIssn h4 {
     font-size: 12pt;
     font-family: "Garamond","serif";
-    color: black;
+    color: #2A2E36;
         font-weight: bold;
+}
+
+table.data p, table.data span, table.data label {
+	margin:auto;
+	margin-top:0.3em;
+	margin-bottom: 1.5em;
 }
 
 
@@ -344,7 +364,7 @@ td.tocGalleys {
 	float: left;
 	clear: left;
 	width: 100%;
-	border-top: 2px solid #006699;
+	border-top: 2px solid #1D4081;
 	margin-bottom: 1.18em;
 	margin-bottom: 1rem;
 	margin-top: 2.65em;
@@ -357,7 +377,7 @@ td.tocGalleys {
     width: 100%;
     float: left;
     border-bottom: 1px solid #ccc;
-    border-bottom: 2px solid #006699;
+    border-bottom: 2px solid #1D4081;
 }
 
 #pageFooterContentWrapper {}
@@ -418,7 +438,7 @@ max-width: 20%;
 	/* narrow HEADER START*/
 	#header {
 		position: relative;
-		height: 4rem;
+		min-height: 7rem;
 	}
 	#headerTitle h1 {
 		padding-right: 4rem;
