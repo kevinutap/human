@@ -171,7 +171,7 @@ input[value=Cancel] {
 	background-repeat: no-repeat;
 	/* background-position: 50%; */
 	background-size: 100% auto;
-	/* min-height: 5em; */
+	min-height: 12em;
 	min-height: 12rem;
 }
 #headerTitle {
@@ -194,6 +194,14 @@ input[value=Cancel] {
 #header a{
 	 text-decoration: none;
 }
+
+@media screen {
+	#headerTitle h1 {
+		position:relative;
+		left: -9999px;
+	}
+}
+
 
 
 span.blockTitle {
@@ -438,7 +446,7 @@ max-width: 20%;
 	/* narrow HEADER START*/
 	#header {
 		position: relative;
-		min-height: 7rem;
+		min-height: 6rem;
 	}
 	#headerTitle h1 {
 		padding-right: 4rem;
@@ -465,9 +473,9 @@ max-width: 20%;
 		box-sizing: border-box;
 		position: absolute;
 		z-index: 5;
-		top: 0;
+		top: 0px;
 		bottom: 0;
-		right: .25rem;
+		right: 0.25rem;
 		margin: auto 0;
 		width: 3.5rem;
 		height: 3.5rem;
