@@ -237,7 +237,7 @@ span.blockTitle {
 }
 
 #navbar a {
-	color: #DD0000;
+	text-transform: none;
 }
 
 #main h2 {
